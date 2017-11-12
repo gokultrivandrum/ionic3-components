@@ -1,21 +1,32 @@
-<ion-list class="accordion-list">
-  <ion-list-header no-lines no-padding>
-    <button ion-item detail-none
-            [style.background]="headerColor"
-            (click)="toggleAccordion()"
-            class="accordion-header"
-            [class.active]="expanded">
-        <ion-icon
-          item-left
-          name="ios-arrow-forward">
-        </ion-icon>
-        {{ title }}
-    </button>
-    <section #accordionContent
-             [style.background]="contentColor"
-             [class.active]="expanded"
-             class="accordion-content">
-      <ng-content></ng-content>
-    </section>
-  </ion-list-header>
+<ion-list class="accordion-list service__list--blk">
+    <ion-list-header no-lines no-padding>
+        <button ion-item detail-none [style.background]="headerColor" (click)="toggleAccordion()" class="accordion-header" [class.active]="expanded">
+           
+               
+                <!-- <ion-col class="col" col-2="">
+                    <div>dfdsfsdfsdfsd</div>
+                </ion-col>
+                <ion-col class="col" col-10="">
+                    <div >  {{ title }}</div>
+                  </ion-col> -->
+
+                <ion-list>
+                    <ion-item>
+                        <ion-thumbnail item-start>
+                            <img src="assets/img/custom/cleaning-staff.svg">
+                        </ion-thumbnail>
+                        <h2>My Neighbor Totoro</h2>
+                        <p>Hayao Miyazaki • 1988</p>
+        </ion-item>
+</ion-list>
+
+
+
+
+
+</button>
+        <section #accordionContent [style.background]="contentColor" [class.active]="expanded" class="accordion-content">
+            <ng-content></ng-content>
+        </section>
+    </ion-list-header>
 </ion-list>
