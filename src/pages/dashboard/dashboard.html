@@ -1,35 +1,25 @@
-<!--
-  Generated template for the DashboardPage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <expandable-header></expandable-header>
 
 
 <ion-content padding>
     <p>Accordion list example - Best places to visit:</p>
 
-    <accordion-list-dashboard *ngFor="let item of items" [title]="item.name" textColor="#FFF" hasMargin="false" headerColor="#F53D3D">
-        <img [src]="item.imageUrl">
-        <ion-item no-lines padding-left padding-right class="reg-toggle">
-            <ion-toolbar>
-                <ion-segment id="gender" required>
-                    <ion-segment-button value="male">Economy
-                    </ion-segment-button>
-                    <ion-segment-button value="female">Silver
-                    </ion-segment-button>
-                    <ion-segment-button value="female1">Bronze
-                    </ion-segment-button>
-                    <ion-segment-button value="female2">Gold
-                    </ion-segment-button>
-                    <ion-segment-button value="female3">Platinum
-                    </ion-segment-button>
-                    <ion-segment-button value="female4">Diamond
-                    </ion-segment-button>
-                </ion-segment>
-            </ion-toolbar>
-        </ion-item>
+    <accordion-list-dashboard class="accordion-list-dashboard" *ngFor="let item of items" [title]="item.name" textColor="#FFF" hasMargin="false" headerColor="#F53D3D">
+        <ion-list>
+            <ion-item>
+                <ion-thumbnail item-start class="thumbnail__blk">
+                    <img src="assets/img/custom/cleaning-staff.svg">
+                </ion-thumbnail>
+                 <ul>
+                    <li><span>Hourly Rated Housekeepers</span></li>
+                    <li><span>Well trained</span></li>
+                    <li><span>Delivered to your doorsteps.</span></li>
+                </ul>
+                <h3>Packages <small></small></h3>
+            </ion-item>
+        </ion-list>
+
     </accordion-list-dashboard>
 </ion-content>
 
