@@ -1,3 +1,9 @@
+
+// SREEJITH 12-11-2017
+.scroll-content {
+    background: #edf1f7;
+}
+
 .accordion-list-dashboard{
 	.accordion-content{
 		padding: 0!important;
@@ -18,25 +24,12 @@
         margin: 0!important;
         padding: 0!important;
         border: none!important;
-            background: #22a9e7;
     }
     .accordion-header {
         margin: 0;
         padding: 0;
         border-bottom: 1px solid #ddd;
         background: none!important;
-        &.active{
-            .item{
-                background: #f4f6f9;
-            }
-        }
-    }
-    .accordion-content {
-        &.active {
-        	.item{
-        		background: #22a9e7;
-        	}
-        }
     }
     .item-inner {
         margin: 0!important;
@@ -55,13 +48,135 @@
             float: left;
             height: 65px;
             text-align: center;
-            background: #22a9e7;
             img {
                 width: auto;
                 height: 40px;
                 margin: 0 auto;
             }
         }
-    }
+    }   
 }
 
+
+
+
+.periodic__drivers{
+	.service__list--blk {	  
+	    .item {
+	         background: #fff!important;
+	    }
+	
+	    .accordion-content {
+	        &.active {
+	        	.item{
+	        		background: #e62255!important;
+	        	}
+	        }
+	    }	  
+	    .list {
+	        .thumbnail__blk {
+	            background: #e62255!important;
+	            
+	        }
+	    }   
+	}
+}
+
+.hourly_housekeeper{
+	.service__list--blk {	  
+	    .item {
+	         background: #fff!important;
+	    }
+	
+	    .accordion-content {
+	        &.active {
+	        	.item{
+	        		background: #22a9e7!important;
+	        	}
+	        }
+	    }	  
+	    .list {
+	        .thumbnail__blk {
+	            background: #22a9e7!important;
+	            
+	        }
+	    }   
+	}
+}
+
+.event_serving_team{
+	.service__list--blk {	  
+	    .item {
+	         background: #fff!important;
+	    }
+	
+	    .accordion-content {
+	        &.active {
+	        	.item{
+	        		background: #00c6ae!important;
+	        	}
+	        }
+	    }	  
+	    .list {
+	        .thumbnail__blk {
+	            background: #00c6ae!important;
+	            
+	        }
+	    }   
+	}
+}
+
+
+.baby_sitters{
+	.service__list--blk {	  
+	    .item {
+	         background: #fff!important;
+	    }
+	
+	    .accordion-content {
+	        &.active {
+	        	.item{
+	        		background: #fdd652!important;
+	        	}
+	        }
+	    }	  
+	    .list {
+	        .thumbnail__blk {
+	            background: #fdd652!important;
+	            
+	        }
+	    }   
+	}
+}
+
+.reg__toggle_blk{
+	    width: calc(100vw - 98px);
+	    .toolbar{
+	    	padding: 0!important;
+	    	height: 54px!important;
+	    	min-height: 54px!important;
+	    	background: #fff;
+	    }
+	    .input-wrapper{
+	    	margin: 12px;
+	    }
+	    .segment-button{
+			border: 0;
+			height: 54px;
+			line-height: 54px;
+			background: #fff;
+	    }
+	    h4{
+	    	font-size: 10px!important;
+	    	margin: 8px 0 -4px 0!important;
+	    	padding: 0 0 0 0!important;
+	    }
+	     h5{
+	    	font-size: 22px!important;
+	    	margin: 0 0 0 0!important;
+	    	padding: 0 0 0 0!important;
+	    	small{
+	    		font-size: 10px!important;
+	    	}
+	    }
+}
