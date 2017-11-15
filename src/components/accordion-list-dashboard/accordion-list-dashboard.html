@@ -1,14 +1,17 @@
 <ion-list class="accordion-list service__list--blk">
+    
 
     <ion-list-header no-lines no-padding>
         <button ion-item detail-none [style.background]="headerColor" (click)="toggleAccordion()" class="accordion-header" [class.active]="expanded">
             <ion-list>
-                <ion-item>
+                <ion-item >
                     <ion-thumbnail item-start class="thumbnail__blk">
                         <img src="assets/img/custom/cleaning-staff.svg">
                     </ion-thumbnail>
-                    <h2>My Neighbor Totoro</h2>
-                    <p>Hayao Miyazaki • 1988</p>
+                    <div class="tile__head">
+                        <h2>JAHEZ</h2>
+                        <p>Periodic Drivers - Housekeepers</p>
+                    </div>
                 </ion-item>
             </ion-list>
         </button>
@@ -17,30 +20,3 @@
         </section>
     </ion-list-header>
 </ion-list>
-
-<!--   <ion-list-header no-lines no-padding>
-    <button ion-item detail-none [style.background]="headerColor" (click)="toggleAccordion()" class="accordion-header" [class.active]="expanded">
-           
-         
-
-                <ion-list>
-                    <ion-item>
-                        <ion-thumbnail item-start class="thumbnail__blk">
-                         <img src="assets/img/misc/foreground.png">
-                        </ion-thumbnail>
-                        <h2>My Neighbor Totoro</h2>
-                        <p>Hayao Miyazaki • 1988</p>
-        </ion-item>
-</ion-list>
-
-
-
-
-
-</button>
-    <section #accordionContent [style.background]="contentColor" [class.active]="expanded" class="accordion-content">
-      <ng-content></ng-content>
-    </section>
-  </ion-list-header>
-</ion-list> -->
-

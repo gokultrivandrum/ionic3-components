@@ -2,6 +2,7 @@
 // SREEJITH 12-11-2017
 .scroll-content {
     background: #edf1f7;
+    padding: 70px 10px!important;
 }
 
 .accordion-list-dashboard{
@@ -11,11 +12,37 @@
 			background: #e9eef5;
 		}
 	}
+	h3{
+		width: 100%;
+		float: left;
+		margin: 0 0px 4px 15px;
+		padding: 0;
+		color: #434343;
+		font-size: 14px;
+		font-weight: bold;
+		small{
+			font-weight: normal;
+		}
+	}
+	ul{
+		padding: 15px 0 15px 32px;
+	    margin: 0;
+	    li{
+			list-style-type: disc;
+			color: #1d8ec2;
+			text-transform: capitalize;
+			margin: 0px 0;
+			span{
+				color: #434343;
+				font-size: 13px;
+			}
+	    }
+	}
 }
 
 .service__list--blk {
     margin: 0;
-    width: 100vw;
+    width: 90vw;
     .list-header-md {
         margin: 0;
     }
@@ -53,8 +80,38 @@
                 height: 40px;
                 margin: 0 auto;
             }
+            p{
+				font-size: 46px;
+				color: #fff;
+				font-weight: bold;
+				float: left;
+				width: 100%;
+				text-align: center;
+				margin: -17px 0 0 0;
+            }
+            small{
+				color: #fff;
+				font-size: 12px;
+				margin: -8px 0 0 0;
+				float: left;
+            }
         }
-    }   
+    } 
+    .tile__head{
+    	padding: 0 0 0 15px;
+    	h2,p{
+			color: #434343;
+			padding: 0;
+			margin: 0;
+    	}
+    	h2{
+    		font-size: 17px;
+    		    text-transform: uppercase;
+    	}
+    	p{
+    		font-size: 12px;
+    	}
+    }  
 }
 
 
@@ -152,19 +209,25 @@
 .reg__toggle_blk{
 	    width: calc(100vw - 98px);
 	    .toolbar{
-	    	padding: 0!important;
-	    	height: 54px!important;
-	    	min-height: 54px!important;
-	    	background: #fff;
+			padding: 0 !important;
+			height: 54px !important;
+			min-height: 54px !important;
+			background: #fff;
+			border-radius: 5px;
+			border: 1px solid #d3d7dc;
 	    }
 	    .input-wrapper{
-	    	margin: 12px;
+	    	margin:0 12px 10px 12px
 	    }
 	    .segment-button{
 			border: 0;
 			height: 54px;
 			line-height: 54px;
 			background: #fff;
+			border-right: 1px solid #d3d7dc!important;
+			&:last-child{
+				border:0!important;
+			}
 	    }
 	    h4{
 	    	font-size: 10px!important;
@@ -177,6 +240,37 @@
 	    	padding: 0 0 0 0!important;
 	    	small{
 	    		font-size: 10px!important;
+	    		color: #434343!important;
+	    	}
+	    }
+	    .economy{
+	    	h4,h5{
+	    		color:#00ad6f;
+	    	}
+	    }
+	     .silver{
+	    	h4,h5{
+	    		color:#828685;
+	    	}
+	    }
+	     .bronze{
+	    	h4,h5{
+	    		color:#ae5e08;
+	    	}
+	    }
+	     .gold{
+	    	h4,h5{
+	    		color:#e2b709;
+	    	}
+	    }
+	     .platinum{
+	    	h4,h5{
+	    		color:#29b5e3;
+	    	}
+	    }
+	     .diamond{
+	    	h4,h5{
+	    		color:#c90a76;
 	    	}
 	    }
 }
