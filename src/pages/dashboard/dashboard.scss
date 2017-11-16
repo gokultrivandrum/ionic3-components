@@ -2,7 +2,7 @@
 // SREEJITH 12-11-2017
 .scroll-content {
     background: #edf1f7;
-    padding: 70px 10px!important;
+    padding: 0 10px!important;
 }
 
 .accordion-list-dashboard{
@@ -42,8 +42,8 @@
 
 .service__list--blk {
     margin: 0;
-    width: 90vw;
-    .list-header-md {
+/*    width: 90vw;
+*/    .list-header-md {
         margin: 0;
     }
     .item {
@@ -273,4 +273,57 @@
 	    		color:#c90a76;
 	    	}
 	    }
+}
+
+
+.toggle__btn--blk{
+	padding: 0 !important;
+	margin: 70px 0 20px 0 !important;
+    .toolbar{
+		padding: 0 !important;
+		height: 50px !important;
+		min-height: 50px !important;
+		background: #fff;
+    }
+    .input-wrapper{
+    	margin:0;
+    }
+    .segment-button{
+		border: 0;
+		height: 54px;
+		line-height: 54px;
+		background: #fff;
+		max-width: 100%;
+		color: #2d3033;
+		font-size: 15px;
+    }
+    .item-inner{
+    	padding: 0!important;
+    }
+    .label {
+		margin: 0!important;
+		padding: 0!important;
+	}
+	.activated{
+		background: #00c6ae!important;
+		color: #fff!important;
+		/*&:after {
+		    content: "";
+		    margin: 0 0.5em;
+		    display: inline-block;
+		    border: 7px solid transparent;
+		    border-top: 8px solid gray;
+		    border-bottom: 0 none;
+		}*/
+	}
+
+}
+.login_holder {
+    padding: 0!important;
+    margin: 0 -10px;
+    height: 100vh;
+    background: #019561;
+	.login_logo{
+		width: 100%;
+	}
 }

@@ -3,6 +3,16 @@
 
 
 <ion-content padding>
+    <ion-item no-lines padding-left padding-right class="reg-toggle toggle__btn--blk">
+        <ion-toolbar>
+            <ion-segment id="gender" required>
+
+                <ion-segment-button  class="activated ">Domestic</ion-segment-button>
+                <ion-segment-button  class="">Industrial</ion-segment-button>
+
+                </ion-segment>
+        </ion-toolbar>
+    </ion-item>
 
     <accordion-list-dashboard [title]="demo" class="accordion-list-dashboard periodic__drivers" hasMargin="false">
             <ion-list>
