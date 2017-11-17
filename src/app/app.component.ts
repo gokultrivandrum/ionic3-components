@@ -11,7 +11,7 @@ import { Subject } from 'rxjs';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = 'HomePage';
+  rootPage: any = 'LoginOnePage';
   activePage = new Subject();
 
   pages: Array<{ title: string, component: any, active: boolean, icon: string }>;
@@ -40,31 +40,31 @@ export class MyApp {
     ];
 
     this.pages = [
-      { title: 'Home', component: 'HomePage', active: true, icon: 'home' },
-      { title: 'Accordion List', component: 'AccordionListPage', active: false, icon: 'map' },
+      // { title: 'Home', component: 'HomePage', active: true, icon: 'home' },
+      // { title: 'Accordion List', component: 'AccordionListPage', active: false, icon: 'map' },
       { title: 'Dashboard', component: 'DashboardPage', active: false, icon: 'map' },
       { title: 'Search', component: 'SearchPage', active: false, icon: 'map' },
       { title: 'Services', component: 'LocationPage', active: false, icon: 'map' },
       { title: 'Payment', component: 'PaymentPage', active: false, icon: 'map' },
-      {
-        title: 'Ionic Official Components',
-        component: 'IonicOfficialComponentsPage', active: false, icon: 'ionic'
-      },
-      { title: 'Ionic Native Features', component: 'IonicNativePage', active: false, icon: 'ionic' },
-      // { title: 'Login', component: 'LoginListPage', active: false, icon: 'archive' },
+      // {
+      //   title: 'Ionic Official Components',
+      //   component: 'IonicOfficialComponentsPage', active: false, icon: 'ionic'
+      // },
+      // { title: 'Ionic Native Features', component: 'IonicNativePage', active: false, icon: 'ionic' },
+      // // { title: 'Login', component: 'LoginListPage', active: false, icon: 'archive' },
       { title: 'Login', component: 'LoginOnePage', active: false, icon: 'archive' },
-      { title: 'Lists', component: 'ListPage', active: false, icon: 'body' },
-      { title: 'Miscellaneous', component: 'MiscellaneousListPage', active: false, icon: 'bookmarks' },
-      { title: 'Modal with Navigation', component: 'ModalWithNavigationPage', active: false, icon: 'book' },
-      { title: 'Popup Fab', component: 'PopupFabPage', active: false, icon: 'map' },
-      { title: 'Popup Modal', component: 'PopupModalsPage', active: false, icon: 'basket' },
-      { title: 'Popup Menu', component: 'PopupMenuListPage', active: false, icon: 'beer' },
-      { title: 'Profile', component: 'ProfileListPage', active: false, icon: 'camera' },
-      { title: 'Side Menu', component: 'SideMenuPage', active: false, icon: 'bookmark' },
-      // Removed for now as there were breaking changes in slides
-      { title: 'Timeline', component: 'TimelinePage', active: false, icon: 'calendar' },
-      { title: 'Slides', component: 'SlidesPage', active: false, icon: 'contact' },
-      { title: 'Theming', component: 'ThemingPage', active: false, icon: 'power' },
+      // { title: 'Lists', component: 'ListPage', active: false, icon: 'body' },
+      // { title: 'Miscellaneous', component: 'MiscellaneousListPage', active: false, icon: 'bookmarks' },
+      // { title: 'Modal with Navigation', component: 'ModalWithNavigationPage', active: false, icon: 'book' },
+      // { title: 'Popup Fab', component: 'PopupFabPage', active: false, icon: 'map' },
+      // { title: 'Popup Modal', component: 'PopupModalsPage', active: false, icon: 'basket' },
+      // { title: 'Popup Menu', component: 'PopupMenuListPage', active: false, icon: 'beer' },
+      // { title: 'Profile', component: 'ProfileListPage', active: false, icon: 'camera' },
+      // { title: 'Side Menu', component: 'SideMenuPage', active: false, icon: 'bookmark' },
+      // // Removed for now as there were breaking changes in slides
+      // { title: 'Timeline', component: 'TimelinePage', active: false, icon: 'calendar' },
+      // { title: 'Slides', component: 'SlidesPage', active: false, icon: 'contact' },
+      // { title: 'Theming', component: 'ThemingPage', active: false, icon: 'power' },
     ];
 
     this.activePage.subscribe((selectedPage: any) => {

@@ -1,6 +1,6 @@
 // import { FormBuilder, FormControl, Validator } from '@angular/forms';
 import { Component } from '@angular/core';
-import { AlertController, App, LoadingController, IonicPage } from 'ionic-angular';
+import { AlertController, App, LoadingController, IonicPage, NavController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -15,7 +15,8 @@ export class LoginOnePage {
   constructor(
     public loadingCtrl: LoadingController,
     public alertCtrl: AlertController,
-    public app: App
+    public app: App,
+    public navCtrl: NavController
   ) { }
 
   login() {
@@ -24,12 +25,13 @@ export class LoginOnePage {
     });
 
     loading.onDidDismiss(() => {
-      const alert = this.alertCtrl.create({
-        title: 'Logged in!',
-        subTitle: 'Thanks for logging in.',
-        buttons: ['Dismiss']
-      });
-      alert.present();
+      // const alert = this.alertCtrl.create({
+      //   title: 'Logged in!',
+      //   subTitle: 'Thanks for logging in.',
+      //   buttons: ['Dismiss']
+      // });
+      // alert.present();
+      this.navCtrl.setRoot('DashboardPage');
     });
 
     loading.present();
