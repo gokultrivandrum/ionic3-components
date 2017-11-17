@@ -1,9 +1,9 @@
-<ion-content padding class="transparent-header" [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
+<ion-content class="transparent-header login_holder">
   <ion-header>
     <ion-navbar>
     </ion-navbar>
   </ion-header>
-  <div padding class="login_holder">
+  <div class="">
    
         <img class="login_logo" src="assets/img/custom/login_bg.png" />
       
@@ -18,14 +18,12 @@
             <ion-label>Password</ion-label>
             <ion-input type="password"></ion-input>
           </ion-item>
+         <button ion-button class="login-button" (click)="login()">Login</button>
+          
         </ion-list>
       </ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col>
-        <button ion-button class="login-button" (click)="login()">Login</button>
-      </ion-col>
-    </ion-row>
+  
     <ion-row>
       <ion-col>
         <div (click)="goToSignup()">

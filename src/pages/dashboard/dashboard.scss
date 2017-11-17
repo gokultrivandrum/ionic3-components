@@ -2,7 +2,7 @@
 // SREEJITH 12-11-2017
 .scroll-content {
     background: #edf1f7;
-    padding: 0 10px!important;
+    /*padding: 0 10px!important;*/
 }
 
 .accordion-list-dashboard{
@@ -278,7 +278,7 @@
 
 .toggle__btn--blk{
 	padding: 0 !important;
-	margin: 70px 0 20px 0 !important;
+	margin: 0px 0 15px 0 !important;
     .toolbar{
 		padding: 0 !important;
 		height: 50px !important;
@@ -307,25 +307,26 @@
 	.activated{
 		background: #00c6ae!important;
 		color: #fff!important;
-		/*&:after {
-		    content: "";
-		    margin: 0 0.5em;
-		    display: inline-block;
-		    border: 7px solid transparent;
-		    border-top: 8px solid gray;
-		    border-bottom: 0 none;
-		}*/
+	
 	}
 
 }
 .login_holder {
     padding: 0!important;
-    margin: 0 -10px;
+    margin:0!important;
     height: 100vh;
     background: #019561;
 	.login_logo{
 		width: 100%;
 	}
+	.scroll-content {
+	    background: #019561;
+	    padding:0px !important;
+	}
+}
+
+.content__holder{
+	margin: 42px 0 0 0;	
 }
 
 
@@ -361,4 +362,99 @@
 	    	}
 	    }
     }
+}
+
+.wizard__holder{
+	background: transparent;
+	border: 0;
+	
+	padding: 0 15px!important;
+	.item-inner{
+		border: none!important;
+		padding: 0!important;
+	}
+	.label{
+		margin: 0!important;
+	}
+	ul{
+		padding: 0;
+		margin: 0;
+		-ms-flex-pack: justify!important;
+		justify-content: space-between!important;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		position: relative;
+		&:after {
+			content: "";
+			margin: 0;
+			display: inline-block;
+			border-top: 2px solid #cfd2d7;
+			position: absolute;
+			width: 100%;
+			top: 9px;
+		}
+		li{
+			width: 26px;
+			height: 26px;
+			background: #ddd;
+			border-radius: 50px;
+			position: relative;
+			z-index: 999;
+			display: inline-block;
+			font-size: 14px;
+			line-height: 29px;
+			text-align: center;
+			-webkit-columns: #1b1b1c;
+			color: rgba(0, 0, 0, 0.5);
+			&.active{
+				background: #00c6ae!important;
+				color: #fff!important;
+			}
+		}
+	}	
+}
+
+.subhead {
+	background: transparent!important;
+    border: 0;
+    padding: 6px 0 3px 0;
+    font-size: 18px;
+    color: #434343;
+    min-height: auto;
+    .item-inner{
+    	padding: 0;
+    	border: 0!important;
+	    .label{
+	    	margin: 0!important;
+	    }						
+    }
+}
+
+.innerfooter{
+	background: #455399;
+	ul{
+		margin: 0;
+		padding: 0;
+		li{
+			display: inline-block;
+			border-right: 1px solid #242c50;
+			float: left;
+			a{
+				color: rgba(0, 0, 0, 0.92);
+				padding: 9px 20px;
+				float: left;
+				font-size: 18px;
+				background: #37427b;
+			}
+			&.active{
+				a{
+					background: #303a6c;
+					color: #fff!important;	
+				}
+				
+			}
+		}
+	}
 }

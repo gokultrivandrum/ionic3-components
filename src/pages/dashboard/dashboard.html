@@ -2,15 +2,30 @@
 <expandable-header></expandable-header>
 
 
-<ion-content padding>
+
+<ion-content padding class="content__holder">
+
+    <ion-item class="wizard__holder">
+        <ul>
+            <li class="active">  <ion-icon name="construct"></ion-icon></li>
+            <li> <ion-icon name="search"></ion-icon></li>
+            <li>  <ion-icon name="pin"></ion-icon></li>
+            <li><ion-icon name="logo-usd"></ion-icon></li>
+        </ul> 
+    </ion-item>
+
+    <ion-item class="subhead">
+    Services
+    </ion-item>
+
     <ion-item no-lines padding-left padding-right class="reg-toggle toggle__btn--blk">
         <ion-toolbar>
             <ion-segment id="gender" required>
 
-                <ion-segment-button  class="activated ">Domestic</ion-segment-button>
-                <ion-segment-button  class="">Industrial</ion-segment-button>
+            <ion-segment-button  class="activated ">Domestic</ion-segment-button>
+            <ion-segment-button  class="">Industrial</ion-segment-button>
 
-                </ion-segment>
+            </ion-segment>
         </ion-toolbar>
     </ion-item>
 
@@ -198,4 +213,5 @@
 
 </ion-content>
 
-<expandable-footer></expandable-footer>
+<expandable-footer>
+</expandable-footer>
