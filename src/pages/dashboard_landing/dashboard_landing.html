@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="content__holder">
+  <ion-slides #slider pager autoplay="2000" (ionSlideDidChange)="onSlideChanged()">
+    <ion-slide *ngFor="let slide of slides" [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
+      <h2>{{slide.title}}</h2>
+    </ion-slide>
+  </ion-slides>
+  <ion-item no-lines padding-left padding-right class="reg-toggle toggle__btn--blk">
+    <ion-toolbar>
+      <ion-segment id="gender" required>
+
+        <ion-segment-button class="activated ">Domestic</ion-segment-button>
+        <ion-segment-button class="">Industrial</ion-segment-button>
+
+      </ion-segment>
+    </ion-toolbar>
+  </ion-item>
+</ion-content>
