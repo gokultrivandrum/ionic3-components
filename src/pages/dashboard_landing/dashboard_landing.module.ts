@@ -10,6 +10,9 @@ import { DashboardLandingPage } from './dashboard_landing';
   imports: [
     IonicPageModule.forChild(DashboardLandingPage),
     SharedModule
+  ],
+  exports: [
+    DashboardLandingPage
   ]
 })
 

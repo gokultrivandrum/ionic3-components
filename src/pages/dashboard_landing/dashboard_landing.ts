@@ -41,5 +41,9 @@ export class DashboardLandingPage {
     console.log('Slide changed! Current index is', currentIndex);
   }
 
+  navDashboard() {
+    this.navCtrl.setRoot('DashboardPage');
+  }
+
   constructor(public navCtrl: NavController) { }
 }
