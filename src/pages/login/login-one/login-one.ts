@@ -31,7 +31,7 @@ export class LoginOnePage {
       //   buttons: ['Dismiss']
       // });
       // alert.present();
-      this.navCtrl.setRoot('DashboardPage');
+      this.navCtrl.setRoot('DashboardLandingPage');
     });
 
     loading.present();
