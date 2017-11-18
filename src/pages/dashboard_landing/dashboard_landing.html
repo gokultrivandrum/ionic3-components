@@ -1,22 +1,32 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title></ion-title>
   </ion-navbar>
-</ion-header>
-<ion-content padding class="content__holder">
+</ion-header> -->
+<expandable-header></expandable-header>
+
+<ion-content padding class="content__holder landing__page--blk">
   <ion-slides #slider pager autoplay="2000" (ionSlideDidChange)="onSlideChanged()">
-    <ion-slide *ngFor="let slide of slides" [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
-      <h2>{{slide.title}}</h2>
+    <ion-slide *ngFor="let slide of slides">
+      <h2>Offer zone goes here.....</h2>
+      <h3>Try resetting your computer’s PRAM.
+ To do this, shut down your Mac and turn it back on.</h3>
     </ion-slide>
   </ion-slides>
   <ion-item no-lines padding-left padding-right class="reg-toggle toggle__btn--blk">
     <ion-toolbar>
       <ion-segment id="gender" required>
 
-        <ion-segment-button class="activated " (click)="navDashboard()" >Domestic</ion-segment-button>
-        <ion-segment-button class="" (click)="navDashboard()">Industrial</ion-segment-button>
+        <ion-segment-button class="activated " (click)="navDashboard()" >
+            <img src="assets/custom/domestic__img.png"><h1>Domestic</h1>
+        </ion-segment-button>
+        <ion-segment-button class="" (click)="navDashboard()">
+            <img src="assets/custom/Industrial__img.png"><h1>Industrial</h1>
+        </ion-segment-button>
 
       </ion-segment>
     </ion-toolbar>
   </ion-item>
 </ion-content>
+<expandable-footer>
+</expandable-footer>

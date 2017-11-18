@@ -11,3 +11,73 @@ page-home {
   }
 }
 
+.landing__page--blk{
+	background: url(../../assets/custom/home__bg.png);
+	background-size: 100%;
+	.scroll-content {
+	    background: transparent!important;
+	    ion-slides {
+			height: 35vh;
+			padding-bottom: 30px;
+		    h2,h3{
+		    	margin: 0;
+		    	padding: 0;
+		    	color: #fff;
+		    }
+		    h2{
+				font-size: 27px;
+				font-weight: 300;
+				margin: 0 0 20px 0;
+		    }
+		    h3{
+				font-size: 13px;
+				font-weight: 300;
+				margin: 0 0 20px 0;
+		    }
+		}
+	}
+	.toggle__btn--blk{
+		padding: 0 !important;
+		margin: 0px 0 15px 0 !important;
+	    .toolbar{
+			padding: 0 !important;
+			height: 150px !important;
+			min-height: 150px !important;
+			background: #fff;
+	    }
+	    .input-wrapper{
+	    	margin:0;
+	    }
+	    .segment-button{
+			border: 0;
+			height: 154px;
+			background: #fff;
+			max-width: 100%;
+			color: #2d3033;
+			font-size: 15px;
+			img {
+				max-width: 34%;
+				margin: 36px 0 -11px 0;
+				border: 0;
+			}
+			h1{
+				margin: 8px 0 0 0;
+				padding: 0;
+				font-size: 23px;
+				font-weight: 300;
+				text-transform: capitalize !important;
+			}
+	    }
+	    .item-inner{
+	    	padding: 0!important;
+	    }
+	    .label {
+			margin: 0!important;
+			padding: 0!important;
+		}
+		.activated{
+			background: #00c6ae!important;
+			color: #fff!important;	
+		}
+	}
+}
