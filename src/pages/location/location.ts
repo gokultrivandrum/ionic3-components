@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NativeGoogleMapsProvider } from '../../providers/native-google-maps/native-google-maps';
 
 /**
  * Generated class for the LocationPage page.
@@ -14,12 +15,27 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'location.html',
 })
 export class LocationPage {
+  @ViewChild('locationMap') mapElement: ElementRef;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController,
+    public mapsCtrl: NativeGoogleMapsProvider) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LocationPage');
+  // Load map only after view is initialized
+  ngAfterViewInit() {
+    this.mapsCtrl.create(this.mapElement).then(() => this.mapsCtrl.centerToGeolocation());
   }
 
+  addMarker() {
+    this.mapsCtrl.addMarkerToGeolocation('Click me!', this.callbackSample);
+  }
+
+  callbackSample() {
+    alert('The callback was called :D');
+  }
+
+  goToPayment() {
+    this.navCtrl.setRoot('PaymentPage');
+  }
 }

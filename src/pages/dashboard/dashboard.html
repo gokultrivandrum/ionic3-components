@@ -30,7 +30,7 @@
     </ion-item>
 
     <accordion-list-dashboard [title]="'assets/img/custom/periodic_drivers.svg'" class="accordion-list-dashboard periodic__drivers" hasMargin="false">
-            <ion-list>
+            <ion-list (click)="search()" >
                 <ion-item>
                     <ion-thumbnail item-start class="thumbnail__blk">
                         <p>4</p>

@@ -1,8 +1,37 @@
 <expandable-header></expandable-header>
 
 
-<ion-content padding>
+<ion-content text-center padding class="content__holder">
+  <ion-item class="wizard__holder">
+    <ul>
+      <li class="active">
+        <ion-icon name="construct"></ion-icon>
+      </li>
+      <li class="active">
+        <ion-icon name="search"></ion-icon>
+      </li>
+      <li class="active">
+        <ion-icon name="pin"></ion-icon>
+      </li>
+      <li>
+        <ion-icon name="logo-usd"></ion-icon>
+      </li>
+    </ul>
+  </ion-item>
 
+  <ion-item class="subhead">
+    Location
+  </ion-item>
+  <ion-item>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <!--<div #locationMap id="locationMap" style="height: 100%"></div>-->
+  <div #locationMap id="locationMap"></div>
+
+  <button ion-button color="green" clear (click)="goToPayment()">
+      <ion-icon name='navigate'></ion-icon>
+      Confirm
+    </button>
 </ion-content>
 
 <expandable-footer></expandable-footer>

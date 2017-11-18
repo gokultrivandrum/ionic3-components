@@ -43,4 +43,8 @@ export class DashboardPage {
     console.log('ionViewDidLoad DashboardPage');
   }
 
+  search() {
+    this.navCtrl.setRoot('SearchPage');
+  }
+
 }

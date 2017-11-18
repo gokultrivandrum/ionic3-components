@@ -44,7 +44,7 @@ export class MyApp {
       { title: 'Accordion List', component: 'AccordionListPage', active: false, icon: 'map' },
       { title: 'Dashboard', component: 'DashboardPage', active: false, icon: 'map' },
       { title: 'Search', component: 'SearchPage', active: false, icon: 'map' },
-      { title: 'Services', component: 'LocationPage', active: false, icon: 'map' },
+      { title: 'Location', component: 'LocationPage', active: false, icon: 'map' },
       { title: 'Payment', component: 'PaymentPage', active: false, icon: 'map' },
       {
         title: 'Ionic Official Components',
