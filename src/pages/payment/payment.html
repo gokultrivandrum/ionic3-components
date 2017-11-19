@@ -7,7 +7,7 @@
 <expandable-header></expandable-header>
 
 
-<ion-content padding class="content__holder" >
+<ion-content padding class="content__holder">
   <ion-item class="wizard__holder">
     <ul>
       <li class="active">
@@ -28,7 +28,36 @@
   <ion-item class="subhead">
     House Maid
   </ion-item>
-
+  <ion-item>
+    <ion-thumbnail item-start>
+      <img [src]="'assets/img/custom/event_serving_team.svg'">
+    </ion-thumbnail>
+    <h2>Gokul</h2>
+    <p>Full Stack Developer</p>
+    <select>
+      <option *ngFor="let count of count" value= {{count.id}}>
+        {{count.id}}
+      </option>
+    </select>
+    <button ion-button color="green" clear>
+      Reserve
+    </button>
+  </ion-item>
+  <ion-item>
+    <ion-thumbnail item-start>
+      <img [src]="'assets/img/custom/event_serving_team.svg'">
+    </ion-thumbnail>
+    <h2>Rajesh</h2>
+    <p>Mean Stack Developer</p>
+    <select>
+      <option *ngFor="let count of count" value= {{count.id}}>
+        {{count.id}}
+      </option>
+    </select>
+    <button ion-button color="green" clear>
+      Reserve
+    </button>
+  </ion-item>
 </ion-content>
 
 <expandable-footer></expandable-footer>
