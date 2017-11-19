@@ -56,8 +56,57 @@ page-login-one {
   }
 }
 .login__form_blk{
+    margin: -5px 16px 0 16px!important;
     .item{
         background: transparent!important;
         opacity: 1!important;
+        padding: 0!important;
+        border-bottom: 1px solid #4c5ca7!important;
+        .item-inner {
+            border-bottom: 0;
+        }
     }
+    .label{      
+        color: #fff;
+        margin: 13px 8px 0 0;    
+        font-weight: 300!important;
+    }
+    .text-input{
+        color: #fff;
+        margin: 11px 8px 0 5px !important;
+        font-weight: 300 !important;
+        font-size: 16px;
+    }
+    input::-webkit-input-placeholder{
+        color:rgba(255, 255, 255, 0.5);
+        text-indent: 0;
+    }
+    .login-button {
+        width: 100%;
+        font-size: 0.9em;
+        background-color: #00c6ad;
+        border-radius: 7px;
+        margin: 16px 0 0 0;
+        height: 40px;
+        text-transform: capitalize;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+    .segment-ios .segment-button:hover:not(.segment-activated) {
+        background-color: #00c6ae !important;
+        color: #fff;
+    }
+
+.login_holder{
+    span{
+        font-weight: 300!important;
+        a{
+            color: #fff;
+             font-weight: 400!important;
+        }
+    }
+}
+.mt10{
+    margin-top: 10px!important;
 }
