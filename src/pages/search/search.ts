@@ -22,4 +22,7 @@ export class SearchPage {
     console.log('ionViewDidLoad SearchPage');
   }
 
+  goToLocation() {
+    this.navCtrl.setRoot('LocationPage');
+  }
 }
