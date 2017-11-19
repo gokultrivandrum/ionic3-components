@@ -109,6 +109,9 @@ page-search {
 			font-size: 11px!important;
 			font-weight: 400!important
 		}
+		&.activated{
+				    background: #00c6ae;
+			}
     }
     .item-inner{
     	padding: 0!important;
@@ -153,26 +156,37 @@ page-search {
 			height: 40px;
 			line-height: 40px;
 			background: #fff;
-			border-right: 1px solid #d3d7dc!important;
-			max-width: 100%!important;
+			border-right: 1px solid #d3d7dc !important;
+			max-width: 100% !important;
+			-ms-flex-align: center!important;
+			align-items: center!important;
+			display: flex;
 			&:last-child{
 				border:0!important;
 			}
+			&.activated{
+				    background: #00c6ae;
+			}
+			div{
+			height: 30px;
+
+			 h4{
+		    	font-size: 10px!important;
+		    	    margin: 0 0 -5px 0 !important;
+		    	padding: 0 0 0 0!important;
+		    }
+		     h5{
+		    	font-size: 20px!important;
+		    	margin: 0 0 0 0!important;
+		    	padding: 0 0 0 0!important;
+		    	small{
+		    		font-size: 10px!important;
+		    		color: #434343!important;
+		    	}
+		    }
+		    }
 	    }
-	    h4{
-	    	font-size: 10px!important;
-	    	margin: 4px 0 -4px 0!important;
-	    	padding: 0 0 0 0!important;
-	    }
-	     h5{
-	    	font-size: 20px!important;
-	    	margin: 0 0 0 0!important;
-	    	padding: 0 0 0 0!important;
-	    	small{
-	    		font-size: 10px!important;
-	    		color: #434343!important;
-	    	}
-	    }
+	   
 	    .economy{
 	    	h4,h5{
 	    		color:#00ad6f;
@@ -257,6 +271,9 @@ page-search {
 			max-width: 100%!important;
 			&:last-child{
 				border:0!important;
+			}
+			&.activated{
+				    background: #00c6ae;
 			}
 	    }
 	    h4{

@@ -30,45 +30,83 @@
   </ion-item>
   <ion-item class="payment__blk">
     <ion-thumbnail item-start>
-      <img [src]="'assets/img/custom/event_serving_team.svg'">
+        <h1>10</h1>
+        <p>Females</p>
     </ion-thumbnail>
-    <h2>Gokul</h2>
-    <p>Full Stack Developer</p>
-    <select>
-      <option *ngFor="let count of count" value= {{count.id}}>
-        {{count.id}}
-      </option>
-    </select>
-    <button ion-button color="green" clear>
+    <ul>
+        <li>
+            <h2>Nationality</h2>
+            <p>Ghana</p>    
+        </li>
+         <li>
+            <h2>Price</h2>
+            <p>1300 <span>SR</span></p>    
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <h2>Count</h2>
+             <select>
+              <option *ngFor="let count of count" value= {{count.id}}>
+                {{count.id}}
+              </option>
+            </select>
+            
+        </li>
+        <li>
+            <button ion-button color="green" clear>
       Reserve
     </button>
+        </li>
+    </ul>
+    
+   
+    
   </ion-item>
-  <ion-item>
+   <ion-item class="payment__blk">
     <ion-thumbnail item-start>
-      <img [src]="'assets/img/custom/event_serving_team.svg'">
+        <h1>10</h1>
+        <p>Females</p>
     </ion-thumbnail>
-    <h2>Rajesh</h2>
-    <p>Mean Stack Developer</p>
-    <select>
-      <option *ngFor="let count of count" value= {{count.id}}>
-        {{count.id}}
-      </option>
-    </select>
-    <button ion-button color="green" clear>
+    <ul>
+        <li>
+            <h2>Nationality</h2>
+            <p>Ghana</p>    
+        </li>
+         <li>
+            <h2>Price</h2>
+            <p>1300 <span>SR</span></p>    
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <h2>Count</h2>
+             <select>
+              <option *ngFor="let count of count" value= {{count.id}}>
+                {{count.id}}
+              </option>
+            </select>
+            
+        </li>
+        <li>
+            <button ion-button color="green" clear>
       Reserve
     </button>
+        </li>
+    </ul>
+    
+   
+    
   </ion-item>
 
-  <ion-row class="btn__blk" >
+  <ion-row class="payment_btn__blk" >
 
-    <button ion-button round>Modify Search</button>
+    <button ion-button round class="mf_btn">Modify Search</button>
 
-  </ion-row>
-  <ion-row class="btn__blk">
-
-    <button ion-button round>Next</button>
+    <button ion-button round nxt_btn>Next</button>
 
   </ion-row>
+
 </ion-content>
 
 <expandable-footer></expandable-footer>
