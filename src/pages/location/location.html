@@ -22,16 +22,25 @@
   <ion-item class="subhead">
     Location
   </ion-item>
-  <ion-item>
-    <ion-input type="text"></ion-input>
-  </ion-item>
+  <ion-card-content class="location__blk">
+        <ion-item>
+          
+          <ion-input type="text"  placeholder="Enter location you prefer"></ion-input>
+        </ion-item>   
+      </ion-card-content>
   <!--<div #locationMap id="locationMap" style="height: 100%"></div>-->
   <div #locationMap id="locationMap"></div>
 
-  <button ion-button color="green" clear (click)="goToPayment()">
+    <ion-row class="location__btn__blk" clear (click)="goToPayment()">
+      
+      <button ion-button round>Confirm</button>
+
+    </ion-row>
+
+  <!-- <button ion-button color="green" clear (click)="goToPayment()">
       <ion-icon name='navigate'></ion-icon>
       Confirm
-    </button>
+    </button> -->
 </ion-content>
 
 <expandable-footer></expandable-footer>
