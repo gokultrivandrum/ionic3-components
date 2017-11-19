@@ -14,8 +14,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'payment.html',
 })
 export class PaymentPage {
-
+  public count: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.count = [
+      { id: 1 },
+      { id: 2 },
+      { id: 3 },
+      { id: 4 },
+      { id: 5 },
+      { id: 6 },
+      { id: 7 },
+      { id: 8 }
+    ];
   }
 
   ionViewDidLoad() {
