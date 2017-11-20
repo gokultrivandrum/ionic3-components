@@ -11,6 +11,11 @@ page-login-one {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    background: #37427a;
+    padding: 0!important;
+    contain: unset !important;;
+    top: unset !important;
+    margin-bottom: 25% !important;
   }
   .logo {
     width: 50%;

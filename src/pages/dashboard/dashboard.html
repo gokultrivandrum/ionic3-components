@@ -75,7 +75,7 @@
     </accordion-list-dashboard>
 
     <accordion-list-dashboard [title]="'assets/img/custom/cleaning-staff.svg'" class="accordion-list-dashboard hourly_housekeeper" hasMargin="false">
-        <ion-list>
+        <ion-list (click)="search()">
             <ion-item>
                 <ion-thumbnail item-start class="thumbnail__blk">
                     <p>4</p>
@@ -121,7 +121,7 @@
 
 
     <accordion-list-dashboard [title]="'assets/img/custom/event_serving_team.svg'" class="accordion-list-dashboard event_serving_team">
-        <ion-list>
+        <ion-list (click)="search()">
             <ion-item>
                 <ion-thumbnail item-start class="thumbnail__blk">
                     <p>4</p>
@@ -166,7 +166,7 @@
     </accordion-list-dashboard>
 
     <accordion-list-dashboard [title]="'assets/img/custom/baby_sitters.svg'" class="accordion-list-dashboard baby_sitters">
-        <ion-list>
+        <ion-list (click)="search()">
             <ion-item>
                 <ion-thumbnail item-start class="thumbnail__blk">
                     <p>4</p>
