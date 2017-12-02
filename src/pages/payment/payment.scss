@@ -3,10 +3,10 @@ page-payment {
 }
 .payment__blk{
 	padding: 0;
-    background: #455499;
+    background: #08488c;
     margin: 0 0 15px 0px;
     ion-thumbnail{
-		background: #455499;
+		background: #08488c;
 		margin: 0!important;
 		height: auto;
 		min-height: auto;
@@ -61,7 +61,7 @@ page-payment {
 				color: #434343;
     		}
     		.button{
-				background: #00c6ad;
+				background: #08488c;
 				border-radius: 50px;
 				height: auto;
 				margin: 7px 0 0 0;
@@ -90,17 +90,17 @@ page-payment {
 	    text-transform: capitalize;
 	}
 	.mf_btn{
-		background: #e02550;
+		background: #08488c;
 
 		&.activated{
-			    background: #8f102d;
+			    background: #08488c;
 		}
 	}
 	.nxt_btn{
-		background: #00c6ad;
+		background: #3ead67;
 
 		&.activated{
-			    background: #285bb2;
+			    background: #3ead67;
 		}
 	}
 }
