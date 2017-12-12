@@ -1,43 +1,56 @@
 <ion-content class="transparent-header login_holder">
-  <ion-header>
-    <ion-navbar>
-    </ion-navbar>
-  </ion-header>
-  <div class="">
-   
-        <img class="login_logo" src="assets/img/custom/login_bg.png" />
-      
-    <ion-row>
-      <ion-col>
-        <ion-list inset class="no-border login__form_blk">
-          <ion-item>
-            <ion-label>  <ion-icon name="ios-mail-outline"></ion-icon></ion-label>
-            <ion-input type="text"  placeholder="Email"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-label><ion-icon name="ios-lock-outline"></ion-icon></ion-label>
-            <ion-input type="password"  placeholder="Password"></ion-input>
+    <ion-header>
+        <ion-navbar>
+        </ion-navbar>
+    </ion-header>
+    <div class="">
 
-          </ion-item>
-         <button ion-button class="login-button" (click)="login()">Login</button>
-          
-        </ion-list>
-      </ion-col>
-    </ion-row>
-  
-    <ion-row class="mt10">
-      <ion-col>
-        <div (click)="goToSignup()">
-          <span>New user?  <a href="">Sign up</a></span>
-        </div>
-      </ion-col>
-    </ion-row>
-  </div>
+        <img class="login_logo" src="assets/custom/login_bg.png" />
+
+        <ion-row>
+            <ion-col>
+                <ion-list inset class="no-border login__form_blk">
+                    <ion-item>
+                        <ion-label>
+                            <ion-icon name="ios-mail-outline"></ion-icon>
+                        </ion-label>
+                        <ion-input type="text" placeholder="Email"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label>
+                            <ion-icon name="ios-lock-outline"></ion-icon>
+                        </ion-label>
+                        <ion-input type="password" placeholder="Password"></ion-input>
+
+                    </ion-item>
+                    <button ion-button class="login-button" (click)="login()">Login</button>
+
+                    <div class="mb20 w100">
+
+                        <div (click)="goToSignup()">
+                            <span>New user?  <a href="">Sign up</a></span>
+                        </div>
+
+                    </div>
+
+                </ion-list>
+            </ion-col>
+            <!-- <ion-row class="mt10">
+                <ion-col>
+                    <div (click)="goToSignup()">
+                        <span>New user?  <a href="">Sign up</a></span>
+                    </div>
+                </ion-col>
+            </ion-row> -->
+        </ion-row>
+
+
+    </div>
 </ion-content>
 <ion-footer class="login_footer">
-  <a href="">See how it works</a>
+    <a href="">See how it works</a>
     <ul>
-      <li><a href="">Terms</a></li>
-      <li><a href="">Privacy</a></li>
+        <li><a href="">Terms</a></li>
+        <li><a href="">Privacy</a></li>
     </ul>
 </ion-footer>

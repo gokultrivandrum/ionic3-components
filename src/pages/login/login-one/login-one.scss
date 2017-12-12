@@ -1,68 +1,74 @@
 page-login-one {
-  // Fullscreen centered image background
-  ion-content {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-color: transparent;
-  }
-  .scroll-content {
-    background-image: radial-gradient(center center, ellipse cover, #ffeda3, #ffc800);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    background: #37427a;
-    padding: 0!important;
-    contain: unset !important;;
-    top: unset !important;
-    margin-bottom: 25% !important;
-  }
-  .logo {
-    width: 50%;
-    height: auto;
-    max-width: 12em;
-    margin: 0 auto;
-    padding-bottom: 50px;
-  }
-  .no-border {
-    border-bottom: 0 !important;
-    box-shadow: none !important;
-  }
-  ion-row {
-    align-items: center;
-    text-align: center;
-  }
-  @media only screen and (min-width: 768px) {
-    ion-col.col {
-      margin: 0 auto;
-      max-width: 40%;
+    // Fullscreen centered image background
+    ion-content {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-color: transparent;
     }
-  }
-  span {
-    color: white;
-  }
-  ion-item {
-    // border-radius: 30px !important;
-    padding-left: 10px !important;
-    margin-bottom: 10px;
-    background-color: #f6f6f6;
-    opacity: 0.7;
-    font-size: 0.9em;
-  }
-  ion-list {
-    margin: 0;
-  }
-  .login-button {
-    width: 100%;
-    // border-radius: 30px;
-    font-size: 0.9em;
-    // border: 1px solid #fff;
-    background-color: #39acdc;
-  }
+    .scroll-content {
+        background-image: radial-gradient(center center, ellipse cover, #ffeda3, #ffc800);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background: #37427a;
+        padding: 0!important;
+        contain: unset !important;
+        top: unset !important;
+        // margin-bottom: 25% !important;
+    }
+    .logo {
+        width: 50%;
+        height: auto;
+        max-width: 12em;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    .no-border {
+        border-bottom: 0 !important;
+        box-shadow: none !important;
+    }
+    ion-row {
+        align-items: center;
+        text-align: center;
+    }
+    @media only screen and (min-width: 768px) {
+        ion-col.col {
+            margin: 0 auto;
+            max-width: 40%;
+        }
+    }
+    span {
+        color: white;
+    }
+    ion-item {
+        // border-radius: 30px !important;
+        padding-left: 10px !important;
+        margin-bottom: 10px;
+        background-color: #f6f6f6;
+        opacity: 0.7;
+        font-size: 0.9em;
+    }
+    ion-list {
+        margin: 0;
+    }
+    .login-button {
+        width: 100%;
+        // border-radius: 30px;
+        font-size: 0.9em;
+        // border: 1px solid #fff;
+        background-color: #39acdc;
+    }
 }
-.login__form_blk{
-    margin: -5px 16px 0 16px!important;
-    .item{
+
+.login__form_blk {
+    margin: 0 16px 0 16px!important;
+    display: flex;
+    height: 40vh;
+    flex-wrap: wrap;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    .item {
         background: transparent!important;
         opacity: 1!important;
         padding: 0!important;
@@ -71,19 +77,19 @@ page-login-one {
             border-bottom: 0;
         }
     }
-    .label{      
+    .label {
         color: #fff;
-        margin: 13px 8px 0 0;    
+        margin: 13px 8px 0 0;
         font-weight: 300!important;
     }
-    .text-input{
+    .text-input {
         color: #fff;
         margin: 11px 8px 0 5px !important;
         font-weight: 300 !important;
         font-size: 16px;
     }
-    input::-webkit-input-placeholder{
-        color:rgba(255, 255, 255, 0.5);
+    input::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5);
         text-indent: 0;
     }
     .login-button {
@@ -98,20 +104,30 @@ page-login-one {
         font-weight: 400;
     }
 }
-    .segment-ios .segment-button:hover:not(.segment-activated) {
-        background-color: #3fae67 !important;
-        color: #fff;
-    }
 
-.login_holder{
-    span{
+.segment-ios .segment-button:hover:not(.segment-activated) {
+    background-color: #3fae67 !important;
+    color: #fff;
+}
+
+.login_holder {
+    span {
         font-weight: 300!important;
-        a{
+        a {
             color: #fff;
-             font-weight: 400!important;
+            font-weight: 400!important;
         }
     }
 }
-.mt10{
+
+.mt10 {
     margin-top: 10px!important;
+}
+
+.mb20 {
+    margin-bottom: 25px!important;
+}
+
+.w100 {
+    width: 100%!important;
 }
