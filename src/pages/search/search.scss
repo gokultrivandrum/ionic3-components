@@ -147,15 +147,15 @@ page-search {}
         height: 7vh;
         // line-height: 40px;
         background: #fff;
-        border-right: 1px solid #d3d7dc !important;
+        border-right: 0px solid #d3d7dc !important;
         max-width: 100% !important;
         -ms-flex-align: center!important;
         align-items: center!important;
         display: flex;
         border: 1px solid #d3d7dc;
-        // &:last-child {
-        //     border: 0!important;
-        // }
+        &:last-child {
+            border-right: 1px solid #d3d7dc !important;
+        }
         &.activated {
             background: #3fae67;
         }
