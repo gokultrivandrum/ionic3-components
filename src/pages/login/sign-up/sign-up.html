@@ -1,0 +1,104 @@
+<ion-content class="transparent-header login_holder blue_bg">
+    <ion-header>
+        <ion-navbar>
+        </ion-navbar>
+    </ion-header>
+    <div class="">
+
+
+
+        <ion-row>
+            <ion-col>
+                <h1 class="signup__head">Sign Up</h1>
+                <ion-list inset class="no-border login__form_blk sign__up--blk">
+                    <ion-item>
+                        <ion-label>
+                            <ion-icon name="ios-contacts-outline"></ion-icon>
+                        </ion-label>
+                        <ion-input type="text" placeholder="Full name"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-icon name="ios-flag-outline"></ion-icon>
+                        <select defaultValue='Select Nationality'>
+                            <option value='hallo1'>Select Nationality</option>
+                            <option value='hallo2'>Nationality1</option>
+                          </select>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label>
+                            <ion-icon name="ios-mail-outline"></ion-icon>
+                        </ion-label>
+                        <ion-input type="text" placeholder="Iqama no"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label>
+                            <ion-icon name="ios-lock-outline"></ion-icon>
+                        </ion-label>
+                        <ion-input type="password" placeholder="Password"></ion-input>
+
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label>
+                            <ion-icon name="ios-call-outline"></ion-icon>
+                        </ion-label>
+                        <ion-input type="text" placeholder="Mobile no 1"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label>
+                            <ion-icon name="ios-call-outline"></ion-icon>
+                        </ion-label>
+                        <ion-input type="text" placeholder="Mobile no 2"></ion-input>
+                    </ion-item>
+
+                    <ion-list radio-group class="radio__btn--blk">
+                        <ion-list-header class="mr20">
+                            Gender
+                        </ion-list-header>
+
+                        <ion-item>
+                            <ion-label>Male</ion-label>
+                            <ion-radio checked="true" value="go"></ion-radio>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label>Femal</ion-label>
+                            <ion-radio value="rust"></ion-radio>
+                        </ion-item>
+
+                    </ion-list>
+
+
+                    <ion-item>
+                        <ion-label>
+                            <ion-icon name="ios-mail-outline"></ion-icon>
+                        </ion-label>
+                        <ion-input type="text" placeholder="Email"></ion-input>
+                    </ion-item>
+
+                    <ion-item class="terms_and--con">
+                        <ion-label>I read <a href="">terms and conditions</a> and agreed with them.</ion-label>
+                        <ion-checkbox checked="true"></ion-checkbox>
+                    </ion-item>
+                    <button ion-button class="login-button sign_up_btn" (click)="login()">Sign Up</button>
+
+
+
+                </ion-list>
+            </ion-col>
+            <!-- <ion-row class="mt10">
+                <ion-col>
+                    <div (click)="goToSignup()">
+                        <span>New user?  <a href="">Sign up</a></span>
+                    </div>
+                </ion-col>
+            </ion-row> -->
+        </ion-row>
+
+
+    </div>
+</ion-content>

@@ -1,0 +1,39 @@
+.blue_bg {
+    background: #04315d!important;
+}
+
+.radio__btn--blk {
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #4c5ca7 !important;
+    .item {
+        width: auto!important;
+        display: inline-block!important;
+        border: 0!important;
+        .radio {
+            margin: 10px 15px 0px 0px;
+        }
+    }
+}
+
+.terms_and--con.item {
+    border: 0!important;
+    .label {
+        margin: 0 0 0 0;
+        font-size: 13px;
+    }
+}
+
+.mr20 {
+    margin-right: 20px!important;
+}
+
+.sign_up_btn {
+    margin: -12px 0 50px 0!important;
+}
+
+.signup__head {
+    margin: 25px 0 4px 17px;
+    color: #fff;
+    font-size: 2.3rem;
+}
