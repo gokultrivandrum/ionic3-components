@@ -1,0 +1,19 @@
+<ion-list class="accordion-list service__list--blk">
+    
+
+    <ion-list-header no-lines no-padding>
+        <button ion-item detail-none [style.background]="headerColor" (click)="toggleAccordion()" class="accordion-header" [class.active]="expanded">
+            <ion-list>
+                <ion-item >
+                    <div class="tile__head">
+                        <h2>Contract Number: 123</h2>
+                        <p>Status: Active</p>
+                    </div>
+                </ion-item>
+            </ion-list>
+        </button>
+        <section #accordionContent [style.background]="contentColor" [class.active]="expanded" class="accordion-content">
+            <ng-content></ng-content>
+        </section>
+    </ion-list-header>
+</ion-list>
