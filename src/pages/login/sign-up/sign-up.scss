@@ -1,33 +1,45 @@
 .blue_bg {
     background: #fff!important;
 }
-.signup_blk{
+
+.signup_blk {
     .scroll-content {
         background: #fff!important;
-        .item{
-            border-bottom: 1px solid #c8c7cc!important;
-        }
-        .input-wrapper{
-            border: 1px solid #ccc!important;
-            border-bottom: 1px solid #ccc!important;
-           
+        .signup_form--blk {
+            margin: 0 16px;
+            .item {
+                padding: 0;
+                .item-inner {
+                    padding: 0;
+                    border-radius: 5px;
+                    /* background: #f9f9f9; */
+                    border: 0.55px solid #c8c7cc;
+                    margin: 0 0 10px 0;
+                }
+                select{
+                    border: 0;
+                    width: calc(100vw - 100px);
+                }
+            }
+            .input-wrapper {
                 border-bottom: 0!important;
                 .text-input {
-                    color:#04315d;
+                    color: #04315d;
                     margin: 0 0 0 11px !important;
                     font-weight: 300 !important;
                     font-size: 16px;
                 }
                 .label {
-                    color:#04315d;
-                    margin: 2px 0 0 10px;
+                    color: #04315d;
+                    padding: 2px 2px 0 10px;
                     font-weight: 300 !important;
+                    margin: 0;
                 }
                 input::-webkit-input-placeholder {
-                    color:#04315d!important;
+                    color: #808080!important;
                     text-indent: 0;
                 }
-            
+            }
         }
     }
 }
@@ -41,16 +53,25 @@
         display: inline-block!important;
         border: 1px solid #fff!important;
         .radio {
-            margin: 10px 15px 0px 0px;
+            margin: 0px 15px 0px 0px;
+        }
+        .item-inner{
+            border: 0!important;
         }
     }
 }
 
 .terms_and--con.item {
     border: 0!important;
+    width: 100%;
+    float: left;
+    margin: 0;
     .label {
         margin: 0 0 0 0;
         font-size: 13px;
+    }
+    .item-inner{
+        border: 0!important;
     }
 }
 
@@ -59,11 +80,23 @@
 }
 
 .sign_up_btn {
-    margin: -12px 0 50px 0!important;
+    margin: 0px 0 0 0 !important;
+    width: 100%;
+    float: left;
 }
 
 .signup__head {
-    margin: 25px 0 4px 17px;
+    margin: 25px 0 10px 17px;
     color: #04315d;
     font-size: 2.3rem;
+}
+.fb{
+    font-weight: 500;
+    .label{
+        font-weight: 500;  
+    }
+}
+.b0{
+    border: 0!important;
+
 }

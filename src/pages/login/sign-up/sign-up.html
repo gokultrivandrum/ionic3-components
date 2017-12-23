@@ -10,7 +10,7 @@
         <ion-row>
             <ion-col>
                 <h1 class="signup__head">Sign Up</h1>
-                <ion-list inset class="no-border login__form_blk sign__up--blk">
+                <div class="signup_form--blk">
                     <ion-item>
                         <ion-label>
                             <ion-icon name="ios-contacts-outline"></ion-icon>
@@ -23,7 +23,7 @@
                         <select defaultValue='Select Nationality'>
                             <option value='hallo1'>Select Nationality</option>
                             <option value='hallo2'>Nationality1</option>
-                          </select>
+                        </select>
                     </ion-item>
 
                     <ion-item>
@@ -38,7 +38,6 @@
                             <ion-icon name="ios-lock-outline"></ion-icon>
                         </ion-label>
                         <ion-input type="password" placeholder="Password"></ion-input>
-
                     </ion-item>
 
                     <ion-item>
@@ -56,7 +55,7 @@
                     </ion-item>
 
                     <div radio-group class="radio__btn--blk">
-                        <ion-list-header class="mr20">
+                        <ion-list-header class="mr20 fb">
                             Gender
                         </ion-list-header>
 
@@ -71,8 +70,6 @@
                         </ion-item>
 
                     </div>
-
-
                     <ion-item>
                         <ion-label>
                             <ion-icon name="ios-mail-outline"></ion-icon>
@@ -81,14 +78,18 @@
                     </ion-item>
 
                     <ion-item class="terms_and--con">
-                        <ion-label>I read <a href="">terms and conditions</a> and agreed with them.</ion-label>
+                        <ion-label>I read
+                            <a href="">terms and conditions</a> and agreed with them.</ion-label>
                         <ion-checkbox checked="true"></ion-checkbox>
                     </ion-item>
                     <button ion-button class="login-button sign_up_btn" (click)="login()">Sign Up</button>
 
+                </div>
 
 
-                </ion-list>
+
+
+
             </ion-col>
             <!-- <ion-row class="mt10">
                 <ion-col>

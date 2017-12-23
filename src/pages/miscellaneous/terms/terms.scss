@@ -1,18 +1,5 @@
 page-terms {
-  @font-face {
-    font-family: 'Sucrose Bold Two';
-    src: url('assets/fonts/sucrose.woff2') format('woff2');
-  }
-  @font-face {
-    font-family: 'IM Fell French Canon Pro';
-    src: url('assets/fonts/im-fell-french-canon-pro.woff2') format('woff2');
-  }
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-  }
+ 
   header {
     background-image: url('../assets/img/blog/mountain-range.jpg');
     padding-top: 61.73333333%;
@@ -44,7 +31,7 @@ page-terms {
     background: #fff;
     position: relative;
     border: 1px solid #fff;
-    font-family: 'IM Fell French Canon Pro';
+    // font-family: 'IM Fell French Canon Pro';
     font-size: 1.4rem;
     padding: 2rem 25%;
     line-height: 1.6;

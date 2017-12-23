@@ -7,64 +7,106 @@
 <expandable-header></expandable-header>
 
 
-<ion-content padding class="content__holder">
+<ion-content padding class="content__holder my__order--blk">
 
 
-  <ion-item class="subhead">
-    My Orders'
-  </ion-item>
-  <accordion-list-myorder [title]="'assets/custom/periodic_drivers1.svg'" class="accordion-list-dashboard periodic__drivers"
-    hasMargin="false">
-    <ion-list (click)="search()">
-      <ion-item>
-        <ul>
-          <li>
-            <span>Contract No:</span>
-          </li>
-          <li>
-            <span>Status</span>
-          </li>
-          <li>
-            <span>Date</span>
-          </li>
-          <li>
-            <span>Cost</span>
-          </li>
-          <li>
-            <span>Action</span>Renew, Cancel icons
-          </li>
-        </ul>
+    <ion-item class="subhead">
+        My Orders'
+    </ion-item>
+    <accordion-list-myorder [title]="'assets/custom/periodic_drivers1.svg'" class="accordion-list-dashboard periodic__drivers"
+        hasMargin="false">
+        <ion-list (click)="search()">
+            <ion-item>
+                <ul>
+                    <li>
+                        <p>Contract No:</p>
+                        <span>125</span>
+                    </li>
+                    <li>
+                        <p>Status</p>
+                        <span>Active</span>
+                    </li>
+                    <li>
+                        <p>Date</p>
+                        <span>23-12-2017</span>
+                    </li>
+                    <li>
+                        <p>Cost</p>
+                        <span>50 USD</span>
+                    </li>
+                    <li>
+                        <p>Action</p>
+
+                        <span>
+                            <button ion-button icon-left small clear >
+                                <ion-icon name="done-all"></ion-icon>
+                                <div>Renew</div>
+                            </button>
+
+                            <button ion-button icon-left clear small class="cancel__btn">
+                                <ion-icon name="trash"></ion-icon>
+                                <div>Cancel</div>
+                            </button>
+                        </span>
 
 
-      </ion-item>
-    </ion-list>
-  </accordion-list-myorder>
-  <accordion-list-myorder [title]="'assets/custom/periodic_drivers1.svg'" class="accordion-list-dashboard periodic__drivers"
-    hasMargin="false">
-    <ion-list (click)="search()">
-      <ion-item>
-        <ul>
-          <li>
-            <span>Contract No:</span>
-          </li>
-          <li>
-            <span>Status</span>
-          </li>
-          <li>
-            <span>Date</span>
-          </li>
-          <li>
-            <span>Cost</span>
-          </li>
-          <li>
-            <span>Action</span>Renew, Cancel icons
-          </li>
-        </ul>
 
 
-      </ion-item>
-    </ion-list>
-  </accordion-list-myorder>
+
+                    </li>
+                </ul>
+
+
+            </ion-item>
+        </ion-list>
+    </accordion-list-myorder>
+    <accordion-list-myorder [title]="'assets/custom/periodic_drivers1.svg'" class="accordion-list-dashboard periodic__drivers"
+        hasMargin="false">
+        <ion-list (click)="search()">
+            <ion-item>
+                <ul>
+                    <li>
+                        <p>Contract No:</p>
+                        <span>125</span>
+                    </li>
+                    <li>
+                        <p>Status</p>
+                        <span>Active</span>
+                    </li>
+                    <li>
+                        <p>Date</p>
+                        <span>23-12-2017</span>
+                    </li>
+                    <li>
+                        <p>Cost</p>
+                        <span>50 USD</span>
+                    </li>
+                    <li>
+                        <p>Action</p>
+
+                        <span>
+                            <button ion-button icon-left small clear>
+                                <ion-icon name="done-all"></ion-icon>
+                                <div>Renew</div>
+                            </button>
+
+                            <button ion-button icon-left clear small class="cancel__btn">
+                                <ion-icon name="trash"></ion-icon>
+                                <div>Cancel</div>
+                            </button>
+                        </span>
+
+
+
+
+
+                    </li>
+                </ul>
+
+
+            </ion-item>
+        </ion-list>
+    </accordion-list-myorder>
 </ion-content>
 
 <expandable-footer></expandable-footer>
