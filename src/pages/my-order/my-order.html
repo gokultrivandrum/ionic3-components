@@ -13,34 +13,58 @@
   <ion-item class="subhead">
     My Orders'
   </ion-item>
-  <ion-item class="payment__blk">
-    <ion-thumbnail item-start>
-      <h1>10</h1>
-    </ion-thumbnail>
-    <ion-thumbnail item-start>
-      <h1>10</h1>
-    </ion-thumbnail>
-    <ion-thumbnail item-start>
-      <h1>10</h1>
-    </ion-thumbnail>
+  <accordion-list-myorder [title]="'assets/custom/periodic_drivers1.svg'" class="accordion-list-dashboard periodic__drivers"
+    hasMargin="false">
+    <ion-list (click)="search()">
+      <ion-item>
+        <ul>
+          <li>
+            <span>Contract No:</span>
+          </li>
+          <li>
+            <span>Status</span>
+          </li>
+          <li>
+            <span>Date</span>
+          </li>
+          <li>
+            <span>Cost</span>
+          </li>
+          <li>
+            <span>Action</span>Renew, Cancel icons
+          </li>
+        </ul>
 
 
+      </ion-item>
+    </ion-list>
+  </accordion-list-myorder>
+  <accordion-list-myorder [title]="'assets/custom/periodic_drivers1.svg'" class="accordion-list-dashboard periodic__drivers"
+    hasMargin="false">
+    <ion-list (click)="search()">
+      <ion-item>
+        <ul>
+          <li>
+            <span>Contract No:</span>
+          </li>
+          <li>
+            <span>Status</span>
+          </li>
+          <li>
+            <span>Date</span>
+          </li>
+          <li>
+            <span>Cost</span>
+          </li>
+          <li>
+            <span>Action</span>Renew, Cancel icons
+          </li>
+        </ul>
 
-  </ion-item>
-  <ion-item class="payment__blk">
-    <ion-thumbnail item-start>
-      <h1>10</h1>
-    </ion-thumbnail>
-    <ion-thumbnail item-start>
-      <h1>10</h1>
-    </ion-thumbnail>
-    <ion-thumbnail item-start>
-      <h1>10</h1>
-    </ion-thumbnail>
 
-
-
-  </ion-item>
+      </ion-item>
+    </ion-list>
+  </accordion-list-myorder>
 </ion-content>
 
 <expandable-footer></expandable-footer>

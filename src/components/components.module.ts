@@ -9,6 +9,7 @@ import { AccordionListComponent } from './accordion-list/accordion-list';
 import { TimelineComponent, TimelineItemComponent, TimelineTimeComponent } from './timeline/timeline';
 import { AccordionListDashboardComponent } from './accordion-list-dashboard/accordion-list-dashboard';
 import { ExpandableFooter } from './expandable-footer/expandable-footer';
+import { AccordionListMyorderComponent } from './accordion-list-myorder/accordion-list-myorder.ts';
 
 export const components = [
   Timer,
@@ -21,6 +22,7 @@ export const components = [
   TimelineItemComponent,
   TimelineTimeComponent,
   AccordionListDashboardComponent,
+  AccordionListMyorderComponent
 ];
 
 @NgModule({
