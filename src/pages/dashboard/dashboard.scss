@@ -476,3 +476,20 @@
 .text-center {
     text-align: center!important;
 }
+
+.btn--blk{
+    width: 100%;
+    padding: 0 0 0 9px!important;
+    float: left;
+    background: #e9eef5!important;
+    margin: -5px 0 10px 0;
+    button{
+        min-width: auto !important;
+        width: 40%;
+        float: left;
+        height: 30px!important;
+    }
+    .button-ios-secondary {
+        background-color: #054f7d!important;
+    }
+}

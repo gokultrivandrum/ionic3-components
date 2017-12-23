@@ -1,15 +1,45 @@
 .blue_bg {
-    background: #04315d!important;
+    background: #fff!important;
+}
+.signup_blk{
+    .scroll-content {
+        background: #fff!important;
+        .item{
+            border-bottom: 1px solid #c8c7cc!important;
+        }
+        .input-wrapper{
+            border: 1px solid #ccc!important;
+            border-bottom: 1px solid #ccc!important;
+           
+                border-bottom: 0!important;
+                .text-input {
+                    color:#04315d;
+                    margin: 0 0 0 11px !important;
+                    font-weight: 300 !important;
+                    font-size: 16px;
+                }
+                .label {
+                    color:#04315d;
+                    margin: 2px 0 0 10px;
+                    font-weight: 300 !important;
+                }
+                input::-webkit-input-placeholder {
+                    color:#04315d!important;
+                    text-indent: 0;
+                }
+            
+        }
+    }
 }
 
 .radio__btn--blk {
     width: 100%;
     margin: 0;
-    border-bottom: 1px solid #4c5ca7 !important;
+    border-bottom: 1px solid #fff !important;
     .item {
         width: auto!important;
         display: inline-block!important;
-        border: 0!important;
+        border: 1px solid #fff!important;
         .radio {
             margin: 10px 15px 0px 0px;
         }
@@ -34,6 +64,6 @@
 
 .signup__head {
     margin: 25px 0 4px 17px;
-    color: #fff;
+    color: #04315d;
     font-size: 2.3rem;
 }
