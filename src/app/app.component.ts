@@ -56,6 +56,7 @@ export class MyApp {
       { title: 'Signup', component: 'SignUpDemoPage', active: false, icon: 'archive' }, 
       { title: 'Privacy', component: 'PrivacyPage', active: false, icon: 'archive' },      
       { title: 'Terms', component: 'TermsPage', active: false, icon: 'archive' },
+      { title: 'My Orders', component: 'MyOrderPage', active: false, icon: 'archive' },      
       // { title: 'Lists', component: 'ListPage', active: false, icon: 'body' },
       // { title: 'Miscellaneous', component: 'MiscellaneousListPage', active: false, icon: 'bookmarks' },
       // { title: 'Modal with Navigation', component: 'ModalWithNavigationPage', active: false, icon: 'book' },
