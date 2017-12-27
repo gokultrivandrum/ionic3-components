@@ -36,7 +36,7 @@ page-home {
         }
     }
     .toggle__btn--blk {
-        padding: 0 !important;
+        padding: 10px !important;
         margin: 0px 0 0 0 !important;
         border-color: #a8a8a8 !important;
         border-bottom: 1px solid #a8a8a8 !important;
@@ -67,7 +67,7 @@ page-home {
             border-right: 1px solid #a8a8a8 !important;
             img {
                 max-width: 34%;
-                margin: -15% auto 0;
+                margin:0% auto 0;
                 border: 0;
             }
             h1 {
@@ -82,10 +82,10 @@ page-home {
                 text-transform: capitalize !important;
                 background: #fbf9fa;
                 &.red_color {
-                    color: #ee073d;
+                    color: #ee073d !important;
                 }
                 &.green_color {
-                    color: #00b47f;
+                    color: #00b47f !important;
                 }
             }
         }

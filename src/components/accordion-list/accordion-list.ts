@@ -24,6 +24,8 @@ export class AccordionListComponent {
   }
 
   toggleAccordion() {
+    console.log("this.expanded", this.expanded);
+    
     this.expanded = !this.expanded;
     const newHeight = this.expanded ? '100%' : '0px';
     this.renderer.setElementStyle(this.elementView.nativeElement, 'height', newHeight);
