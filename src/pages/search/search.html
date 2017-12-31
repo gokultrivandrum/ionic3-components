@@ -1,175 +1,198 @@
 <expandable-header></expandable-header>
 <ion-content padding class="content__holder">
-    <ion-item class="wizard__holder">
-        <ul>
-            <li class="active">
-                <ion-icon name="construct"></ion-icon>
-            </li>
-            <li class="active">
-                <ion-icon name="search"></ion-icon>
-            </li>
-            <li>
-                <ion-icon name="pin"></ion-icon>
-            </li>
-            <li>
-                <ion-icon name="logo-usd"></ion-icon>
-            </li>
-        </ul>
+  <ion-item class="wizard__holder">
+    <ul>
+      <li class="active">
+        <ion-icon name="construct"></ion-icon>
+      </li>
+      <li class="active">
+        <ion-icon name="search"></ion-icon>
+      </li>
+      <li>
+        <ion-icon name="pin"></ion-icon>
+      </li>
+      <li>
+        <ion-icon name="logo-usd"></ion-icon>
+      </li>
+    </ul>
+  </ion-item>
+
+  <ion-item class="subhead pl10">
+    Search
+  </ion-item>
+
+  <ion-card class="search__holder">
+    <p class="inner__label">Location</p>
+    <ion-card-content class="location">
+      <ion-item>
+        <ion-label>
+          <ion-icon name="ios-pin-outline"></ion-icon>
+        </ion-label>
+        <ion-input type="text" placeholder="Enter location you prefer"></ion-input>
+      </ion-item>
+    </ion-card-content>
+    <p class="inner__label">District</p>
+    <ion-card-content class="location">
+      <ion-item>
+        <ion-label>
+          <ion-icon name="ios-pin-outline"></ion-icon>
+        </ion-label>
+        <ion-select class="full-width-select" placeholder="State" interface="action-sheet">
+          <ion-option value="nes">NES</ion-option>
+          <ion-option value="n64">Nintendo64</ion-option>
+          <ion-option value="ps">PlayStation</ion-option>
+          <ion-option value="genesis">Sega Genesis</ion-option>
+          <ion-option value="saturn">Sega Saturn</ion-option>
+          <ion-option value="snes">SNES</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-card-content>
+    <p class="inner__label">Session</p>
+    <ion-item no-lines padding-left padding-right class="reg-toggle session__toggle_blk">
+      <ion-toolbar>
+        <ion-segment id="gender" required>
+
+          <ion-segment-button class="activated ">AM
+            <span>7:30AM - 11:30 AM</span>
+          </ion-segment-button>
+          <ion-segment-button class="">PM
+            <span>3:30AM - 7:30 AM</span>
+          </ion-segment-button>
+
+        </ion-segment>
+      </ion-toolbar>
     </ion-item>
 
-    <ion-item class="subhead pl10">
-        Search
+    <p class="inner__label">Packages</p>
+    <ion-item no-lines padding-left padding-right class="reg-toggle packages__toggle_blk">
+
+      <ion-segment id="gender" required>
+        <ion-segment-button class="economy">
+          <div>
+            <h4>Economy</h4>
+            <h5>1
+              <small>Day</small>
+            </h5>
+          </div>
+        </ion-segment-button>
+        <ion-segment-button class="silver">
+          <div>
+            <h4>Silver</h4>
+            <h5>2
+              <small>Day</small>
+            </h5>
+          </div>
+        </ion-segment-button>
+        <ion-segment-button class="bronze">
+          <div>
+            <h4>Bronze</h4>
+            <h5>3
+              <small>Day</small>
+            </h5>
+          </div>
+        </ion-segment-button>
+      </ion-segment>
+
     </ion-item>
 
-    <ion-card class="search__holder">
-        <p class="inner__label">Location</p>
+    <ion-item no-lines padding-left padding-right class="reg-toggle packages__toggle_blk ">
+
+      <ion-segment id="gender" required>
+        <ion-segment-button class="gold">
+          <div>
+            <h4>Gold</h4>
+            <h5>1
+              <small>Day</small>
+            </h5>
+          </div>
+        </ion-segment-button>
+        <ion-segment-button class="platinum">
+          <div>
+            <h4>Platinum</h4>
+            <h5>2
+              <small>Day</small>
+            </h5>
+          </div>
+        </ion-segment-button>
+        <ion-segment-button class="diamond">
+          <div>
+            <h4>Diamond</h4>
+            <h5>3
+              <small>Day</small>
+            </h5>
+          </div>
+        </ion-segment-button>
+
+      </ion-segment>
+
+    </ion-item>
+
+    <p class="inner__label">Prefered days</p>
+    <ion-item no-lines padding-left padding-right class="reg-toggle days__toggle_blk">
+      <ion-toolbar>
+        <ion-segment id="gender" required>
+          <ion-segment-button class="economy">
+            <h4>S</h4>
+          </ion-segment-button>
+          <ion-segment-button class="silver">
+            <h4>M</h4>
+          </ion-segment-button>
+          <ion-segment-button class="bronze">
+            <h4>T</h4>
+          </ion-segment-button>
+          <ion-segment-button class="economy">
+            <h4>W</h4>
+          </ion-segment-button>
+          <ion-segment-button class="silver">
+            <h4>T</h4>
+          </ion-segment-button>
+          <ion-segment-button class="bronze">
+            <h4>F</h4>
+          </ion-segment-button>
+          <ion-segment-button class="bronze">
+            <h4>S</h4>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-toolbar>
+    </ion-item>
+    <ion-row class="search_date_time_blk">
+      <ion-col class="col" col-12>
+        <p class="inner__label">Start Date</p>
         <ion-card-content class="location">
-            <ion-item>
-                <ion-label>
-                    <ion-icon name="ios-pin-outline"></ion-icon>
-                </ion-label>
-                <ion-input type="text" placeholder="Enter location you prefer"></ion-input>
-            </ion-item>
+          <ion-item>
+            <ion-label class="startdate_select--btn">
+              <button ion-button icon-left clear small>
+                <ion-icon name="ios-arrow-down-outline"></ion-icon>
+              </button>
+            </ion-label>
+            <ion-input type="text" placeholder="Today"></ion-input>
+            <ion-label class="calender__iocn">
+              <ion-icon name="ios-calendar-outline"></ion-icon>
+            </ion-label>
+          </ion-item>
         </ion-card-content>
-        <p class="inner__label">District</p>
+      </ion-col>
+      <ion-col class="col" col-9>
+        <p class="inner__label">Duration</p>
         <ion-card-content class="location">
-            <ion-item>
-                <ion-label>
-                    <ion-icon name="ios-pin-outline"></ion-icon>
-                </ion-label>
-                <ion-input type="text" placeholder="Enter district you prefer"></ion-input>
-            </ion-item>
+          <ion-item>
+            <ion-label class="startdate_select--btn">
+              <button ion-button icon-left clear small>
+                <ion-icon name="ios-arrow-down-outline"></ion-icon>
+              </button>
+            </ion-label>
+            <ion-input type="text" placeholder="Enter duration"></ion-input>
+          </ion-item>
         </ion-card-content>
-        <p class="inner__label">Session</p>
-        <ion-item no-lines padding-left padding-right class="reg-toggle session__toggle_blk">
-            <ion-toolbar>
-                <ion-segment id="gender" required>
+      </ion-col>
+      <ion-col class="col" col-3 class="month_txt">
+        <p>Month(s)</p>
+      </ion-col>
 
-                    <ion-segment-button class="activated ">AM <span>7:30AM - 11:30 AM</span></ion-segment-button>
-                    <ion-segment-button class="">PM<span>3:30AM - 7:30 AM</span></ion-segment-button>
-
-                </ion-segment>
-            </ion-toolbar>
-        </ion-item>
-
-        <p class="inner__label">Packages</p>
-        <ion-item no-lines padding-left padding-right class="reg-toggle packages__toggle_blk">
-
-            <ion-segment id="gender" required>
-                <ion-segment-button class="economy">
-                    <div>
-                        <h4>Economy</h4>
-                        <h5>1<small>Day</small></h5>
-                    </div>
-                </ion-segment-button>
-                <ion-segment-button class="silver">
-                    <div>
-                        <h4>Silver</h4>
-                        <h5>2<small>Day</small></h5>
-                    </div>
-                </ion-segment-button>
-                <ion-segment-button class="bronze">
-                    <div>
-                        <h4>Bronze</h4>
-                        <h5>3<small>Day</small></h5>
-                    </div>
-                </ion-segment-button>
-            </ion-segment>
-
-        </ion-item>
-
-        <ion-item no-lines padding-left padding-right class="reg-toggle packages__toggle_blk ">
-
-            <ion-segment id="gender" required>
-                <ion-segment-button class="gold">
-                    <div>
-                        <h4>Gold</h4>
-                        <h5>1<small>Day</small></h5>
-                    </div>
-                </ion-segment-button>
-                <ion-segment-button class="platinum">
-                    <div>
-                        <h4>Platinum</h4>
-                        <h5>2<small>Day</small></h5>
-                    </div>
-                </ion-segment-button>
-                <ion-segment-button class="diamond">
-                    <div>
-                        <h4>Diamond</h4>
-                        <h5>3<small>Day</small></h5>
-                    </div>
-                </ion-segment-button>
-
-            </ion-segment>
-
-        </ion-item>
-
-        <p class="inner__label">Prefered days</p>
-        <ion-item no-lines padding-left padding-right class="reg-toggle days__toggle_blk">
-            <ion-toolbar>
-                <ion-segment id="gender" required>
-                    <ion-segment-button class="economy">
-                        <h4>S</h4>
-                    </ion-segment-button>
-                    <ion-segment-button class="silver">
-                        <h4>M</h4>
-                    </ion-segment-button>
-                    <ion-segment-button class="bronze">
-                        <h4>T</h4>
-                    </ion-segment-button>
-                    <ion-segment-button class="economy">
-                        <h4>W</h4>
-                    </ion-segment-button>
-                    <ion-segment-button class="silver">
-                        <h4>T</h4>
-                    </ion-segment-button>
-                    <ion-segment-button class="bronze">
-                        <h4>F</h4>
-                    </ion-segment-button>
-                    <ion-segment-button class="bronze">
-                        <h4>S</h4>
-                    </ion-segment-button>
-                </ion-segment>
-            </ion-toolbar>
-        </ion-item>
-        <ion-row class="search_date_time_blk">
-            <ion-col class="col" col-12>
-                <p class="inner__label">Start Date</p>
-                <ion-card-content class="location">
-                    <ion-item>
-                        <ion-label class="startdate_select--btn">
-                            <button ion-button icon-left clear small>
-									<ion-icon name="ios-arrow-down-outline"></ion-icon>
-								</button>
-                        </ion-label>
-                        <ion-input type="text" placeholder="Today"></ion-input>
-                        <ion-label class="calender__iocn">
-                            <ion-icon name="ios-calendar-outline"></ion-icon>
-                        </ion-label>
-                    </ion-item>
-                </ion-card-content>
-            </ion-col>
-            <ion-col class="col" col-9>
-                <p class="inner__label">Duration</p>
-                <ion-card-content class="location">
-                    <ion-item>
-                        <ion-label class="startdate_select--btn">
-                            <button ion-button icon-left clear small>
-								<ion-icon name="ios-arrow-down-outline"></ion-icon>
-							</button>
-                        </ion-label>
-                        <ion-input type="text" placeholder="Enter duration"></ion-input>
-                    </ion-item>
-                </ion-card-content>
-            </ion-col>
-            <ion-col class="col" col-3 class="month_txt">
-                <p>Month(s)</p>
-            </ion-col>
-
-        </ion-row>
+    </ion-row>
 
 
-        <!-- 	<ion-row class="search_date_time_blk">
+    <!-- 	<ion-row class="search_date_time_blk">
 		    <ion-col>
 		    <p class="inner__label">Location</p>
 					<ion-card-content class="location">
@@ -192,12 +215,12 @@
 		  </ion-row> -->
 
 
-    </ion-card>
-    <ion-row class="btn__blk" (click)="goToLocation()">
+  </ion-card>
+  <ion-row class="btn__blk" (click)="goToLocation()">
 
-        <button ion-button round>Search</button>
+    <button ion-button round>Search</button>
 
-    </ion-row>
+  </ion-row>
 
 
 </ion-content>
