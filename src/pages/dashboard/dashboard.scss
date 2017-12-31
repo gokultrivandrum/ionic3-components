@@ -66,6 +66,7 @@
         margin: 0;
         padding: 0;
         border-bottom: 1px solid #ddd!important;
+        min-height: 18vh;
         .thumbnail__blk {
             margin: 0;
             padding: 15px;
@@ -76,7 +77,7 @@
             float: left;
             -ms-flex-align: center!important;
             align-items: center!important;
-            height: 12vh;
+            min-height: 17.8vh;
             text-align: center;
             border-right: 1px solid #edf1f7;
             img {
@@ -484,12 +485,66 @@
     background: #e9eef5!important;
     margin: -5px 0 10px 0;
     button{
-        min-width: auto !important;
-        width: 40%;
+      
+        min-width: 40%;
         float: left;
         height: 30px!important;
     }
     .button-ios-secondary {
         background-color: #054f7d!important;
+    }
+}
+
+.action-sheet-container {
+    -webkit-box-pack: start!important;
+    -webkit-justify-content:flex-start!important;
+    -ms-flex-pack: start!important;
+    justify-content: flex-start!important;
+    height: 100vh!important;
+    background: #fff!important;
+    padding: 0!important;
+    .action-sheet-group-cancel{
+        position: absolute;
+        top: 0;
+        float: right;
+        width: auto;
+        right: 0;
+        height: 50px;
+        .action-sheet-button{
+            color: #d60d0d!important;
+            width: auto;
+        }
+    }
+    .action-sheet-group{
+        background: #fff !important;
+        overflow-x: hidden !important;
+        width: 100%;
+        text-align: right;
+        padding: 0;
+        border-radius: 0!important;
+        .action-sheet-button {
+            text-align: left;
+            text-align: start;
+            position: relative;
+            overflow: hidden;
+            min-height: 4.8rem;
+            font-size: 1.6rem;
+            color: #222;
+            background: transparent;
+            padding: 0 16px;
+            border-bottom: 0.55px solid #d6d6da!important;
+            .button-inner{
+                justify-content: left;
+            }
+        }
+       
+    }
+    .action-sheet-title{
+        border: none!important;
+    }
+    .action-sheet-group-cancel{
+        .action-sheet-button{
+            border:none !important;
+        }
     }
 }
