@@ -14,7 +14,7 @@ page-home {
 .landing__page--blk{
 	background: url(home__bg.png);
 	.scroll-content {
-    background: transparent!important;
-	
-}
+        background: transparent!important;
+        
+    }
 }
