@@ -49,9 +49,11 @@
     margin: 0;
     border-bottom: 1px solid #fff !important;
     .item {
-        width: auto!important;
-        display: inline-block!important;
-        border: 1px solid #fff!important;
+        min-height: auto;
+        margin: 10px 0;
+        width: auto !important;
+        display: inline-block !important;
+        border: 1px solid #fff !important;
         .radio {
             margin: 0px 15px 0px 0px;
         }
@@ -69,6 +71,9 @@
     .label {
         margin: 0 0 0 0;
         font-size: 13px;
+    }
+    .checkbox{
+        margin: -7px 0 0 0!important;
     }
     .item-inner{
         border: 0!important;
