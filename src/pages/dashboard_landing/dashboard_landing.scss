@@ -2,6 +2,10 @@ page-dashboard-landing {
   h2 {
     color: white;
   }
+  h1 {
+    position: static !important;
+    
+  }
   ion-slides,
   .swiper-container {
     height: 100%;

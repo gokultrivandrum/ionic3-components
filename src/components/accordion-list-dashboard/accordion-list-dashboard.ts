@@ -9,7 +9,8 @@ export class AccordionListDashboardComponent {
   @Input() textColor: string = '#FFF';
   @Input() contentColor: string = '#F9F9F9';
   @Input() title: string;
-  @Input() name: string;  
+  @Input() name: string; 
+  @Input() desc: string;    
   @Input() hasMargin: boolean = true;
 
   @ViewChild('accordionContent') elementView: ElementRef;

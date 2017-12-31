@@ -37,7 +37,7 @@
         </ion-toolbar>
     </ion-item> -->
 
-    <accordion-list-dashboard [name]="'JAHEZ'" [title]="'assets/custom/periodic_drivers1.svg'" class="accordion-list-dashboard periodic__drivers" hasMargin="false">
+    <accordion-list-dashboard [name]="'JAHEZ'"  [desc]="'Periodic Drivers - Housekeepers'" [title]="'assets/custom/periodic_drivers1.svg'" class="accordion-list-dashboard periodic__drivers" hasMargin="false">
         <ion-list (click)="search()">
             <ion-item>
                 <ion-thumbnail item-start class="thumbnail__blk">
@@ -99,11 +99,11 @@
         </ion-list>
     </accordion-list-dashboard>
 
-    <accordion-list-dashboard [name]="'MUREEH'" [title]="'assets/custom/cleaning_staff_1.svg'" class="accordion-list-dashboard hourly_housekeeper" hasMargin="false">
+    <accordion-list-dashboard [name]="'MUREEH'" [desc]="'Hourly HouseKeeper'" [title]="'assets/custom/cleaning_staff_1.svg'" class="accordion-list-dashboard hourly_housekeeper" hasMargin="false">
         <ion-list (click)="search()">
             <ion-item>
                 <ion-thumbnail item-start class="thumbnail__blk">
-                    <p>4</p>
+                    <p>3</p>
                     <small>HOURS</small>
                 </ion-thumbnail>
                 <ul>
@@ -151,9 +151,8 @@
                         </ion-segment>
                     </ion-toolbar>
                 </ion-item> -->
-                <div class="btn--blk">
-                    <button ion-button color="dark">Maid</button>
-                    <button ion-button color="secondary">Drive</button>
+                <div>
+                    <button ion-button color="dark">Hourly Housekeepers</button>
                 </div>
 
             </ion-item>
@@ -161,11 +160,11 @@
     </accordion-list-dashboard>
 
 
-    <accordion-list-dashboard [name]="'MEDAYAF'" [title]="'assets/custom/event_serving_team1.svg'" class="accordion-list-dashboard event_serving_team">
+    <accordion-list-dashboard [name]="'MEDAYAF'" [desc]="'Event Serving Team'" [title]="'assets/custom/event_serving_team1.svg'" class="accordion-list-dashboard event_serving_team">
         <ion-list (click)="search()">
             <ion-item>
                 <ion-thumbnail item-start class="thumbnail__blk">
-                    <p>4</p>
+                    <p>5</p>
                     <small>HOURS</small>
                 </ion-thumbnail>
                 <ul>
@@ -213,20 +212,19 @@
                         </ion-segment>
                     </ion-toolbar>
                 </ion-item> -->
-                <div class="btn--blk">
-                    <button ion-button color="dark">Maid</button>
-                    <button ion-button color="secondary">Drive</button>
+                <div >
+                    <button ion-button color="dark">Event Serving Team</button>
                 </div>
 
             </ion-item>
         </ion-list>
     </accordion-list-dashboard>
 
-    <accordion-list-dashboard [name]="'ENAYA'" [title]="'assets/custom/baby_sitters1.svg'" class="accordion-list-dashboard baby_sitters">
+    <accordion-list-dashboard [name]="'ENAYA'" [desc]="'Old / Baby Sitters'" [title]="'assets/custom/baby_sitters1.svg'" class="accordion-list-dashboard baby_sitters">
         <ion-list (click)="search()">
             <ion-item>
                 <ion-thumbnail item-start class="thumbnail__blk">
-                    <p>4</p>
+                    <p>2</p>
                     <small>HOURS</small>
                 </ion-thumbnail>
                 <ul>
@@ -274,9 +272,8 @@
                         </ion-segment>
                     </ion-toolbar>
                 </ion-item> -->
-                <div class="btn--blk">
-                    <button ion-button color="dark">Maid</button>
-                    <button ion-button color="secondary">Drive</button>
+                <div>
+                    <button ion-button color="dark">Old / Baby Sitters</button>
                 </div>
 
             </ion-item>

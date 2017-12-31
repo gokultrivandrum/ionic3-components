@@ -30,80 +30,83 @@
   </ion-item>
   <ion-item class="payment__blk">
     <ion-thumbnail item-start>
-        <h1>10</h1>
-        <p>Females</p>
+      <h1>10</h1>
+      <p>Females</p>
     </ion-thumbnail>
     <ul>
-        <li>
-            <h2>Nationality</h2>
-            <p>Ghana</p>    
-        </li>
-         <li>
-            <h2>Price</h2>
-            <p>1300 <span>SR</span></p>    
-        </li>
+      <li>
+        <h2>Nationality</h2>
+        <p>Ghana</p>
+      </li>
+      <li>
+        <h2>Price</h2>
+        <p>1300
+          <span>SR</span>
+        </p>
+      </li>
     </ul>
     <ul>
-        <li>
-            <h2>Count</h2>
-             <select>
-              <option *ngFor="let count of count" value= {{count.id}}>
-                {{count.id}}
-              </option>
-            </select>
-            
-        </li>
-        <li>
-            <button ion-button color="green" clear>
-      Reserve
-    </button>
-        </li>
+      <li>
+        <h2>Count</h2>
+        <ion-item>
+          <ion-select [(ngModel)]="languages" interface="popover">
+            <ion-option *ngFor="let count of count" [value]="count">{{count}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+      </li>
+      <li>
+        <button ion-button color="green" clear>
+          Reserve
+        </button>
+      </li>
     </ul>
-    
-   
-    
+
+
+
   </ion-item>
-   <ion-item class="payment__blk">
+  <ion-item class="payment__blk">
     <ion-thumbnail item-start>
-        <h1>10</h1>
-        <p>Females</p>
+      <h1>10</h1>
+      <p>Females</p>
     </ion-thumbnail>
     <ul>
-        <li>
-            <h2>Nationality</h2>
-            <p>Ghana</p>    
-        </li>
-         <li>
-            <h2>Price</h2>
-            <p>1300 <span>SR</span></p>    
-        </li>
+      <li>
+        <h2>Nationality</h2>
+        <p>Ghana</p>
+      </li>
+      <li>
+        <h2>Price</h2>
+        <p>1300
+          <span>SR</span>
+        </p>
+      </li>
     </ul>
     <ul>
-        <li>
-            <h2>Count</h2>
-             <select>
-              <option *ngFor="let count of count" value= {{count.id}}>
-                {{count.id}}
-              </option>
-            </select>
-            
-        </li>
-        <li>
-            <button ion-button color="green" clear>
-      Reserve
-    </button>
-        </li>
+      <li>
+        <h2>Count</h2>
+        <ion-item>
+          <ion-select [(ngModel)]="language" interface="popover">
+            <ion-option *ngFor="let count of count" [value]="count">{{count}}</ion-option>
+          </ion-select>
+        </ion-item>
+      </li>
+      <li>
+        <button ion-button color="green" clear>
+          Reserve
+        </button>
+      </li>
     </ul>
-    
-   
-    
+
+
+
   </ion-item>
 
-  <ion-row class="payment_btn__blk" >
+  <ion-row class="payment_btn__blk">
 
     <button ion-button round class="mf_btn">Modify Search</button>
 
-    <button ion-button round  class="nxt_btn">Next</button>
+    <button ion-button round class="nxt_btn">Next</button>
 
   </ion-row>
 

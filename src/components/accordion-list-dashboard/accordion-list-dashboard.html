@@ -2,7 +2,7 @@
     
 
     <ion-list-header no-lines no-padding>
-        <button ion-item detail-none [style.background]="headerColor" (click)="toggleAccordion()" class="accordion-header" [class.active]="expanded">
+        <button ion-item detail-none [style.background]="headerColor" (tap)="toggleAccordion()" class="accordion-header" [class.active]="expanded">
             <ion-list>
                 <ion-item >
                     <ion-thumbnail item-start class="thumbnail__blk">
@@ -10,7 +10,7 @@
                     </ion-thumbnail>
                     <div class="tile__head">
                         <h2>{{name}}</h2>
-                        <p>Periodic Drivers - Housekeepers</p>
+                        <p>{{desc}}</p>
                     </div>
                 </ion-item>
             </ion-list>
