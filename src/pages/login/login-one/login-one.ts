@@ -10,7 +10,7 @@ import { AlertController, App, LoadingController, IonicPage } from 'ionic-angula
 export class LoginOnePage {
 
   public loginForm: any;
-  public backgroundImage = 'assets/img/background/background-5.jpg';
+  // public backgroundImage = 'assets/img/background/bg01.png';
 
   constructor(
     public loadingCtrl: LoadingController,

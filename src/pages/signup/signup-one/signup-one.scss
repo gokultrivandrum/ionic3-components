@@ -1,4 +1,4 @@
-page-login-one {
+signup-one {
   // Fullscreen centered image background
   ion-content {
     background-size: cover;
@@ -69,17 +69,6 @@ page-login-one {
     font-size: 20px;
     margin-top: 20px;
   }
-
-  .ico-user .login-fields {
-    position: relative;
-  }
-  .ico-user:before, .ico-pass:before, .ico-email:before, .ico-conPass:before {
-      content: '';
-      position: absolute;
-      width: 70px;
-      height: 74px;
-  }
-  .ico-user:before {background: url(../assets/img/background/user.png) no-repeat scroll center 0 / 58px auto;}
 
   .login-title{
     margin-bottom: 30px;

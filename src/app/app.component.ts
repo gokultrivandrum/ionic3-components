@@ -48,6 +48,7 @@ export class MyApp {
         component: 'IonicOfficialComponentsPage', active: false, icon: 'ionic' },
       { title: 'Ionic Native Features', component: 'IonicNativePage', active: false, icon: 'ionic' },
       { title: 'Login', component: 'LoginListPage', active: false, icon: 'archive' },
+      { title: 'SignUp', component: 'SignUpListPage', active: false, icon: 'archive' },
       { title: 'Lists', component: 'ListPage', active: false, icon: 'body' },
       { title: 'Miscellaneous', component: 'MiscellaneousListPage', active: false, icon: 'bookmarks' },
       { title: 'Modal with Navigation', component: 'ModalWithNavigationPage', active: false, icon: 'book' },
